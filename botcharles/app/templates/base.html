@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Aula</title>
+  <title>ClassNet - Messenger</title>
   <meta charset="utf-8">
- 
-  <!-- Isso é necessário para funcionar a versão mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
  
-  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
  
 </head>
 <body>
-  <!-- CSS -->
-  <!-- Header principal --> 
+  <style>
+    body {background-color: coral;}
+  </style>
   <header class="header" role="banner">
     <div class="container">
       <span class="control-menu visible-xs ico-menu-2"></span>
       <span class="control-sidebar visible-xs ico-list"></span>
       <h1 class="project-name"><a href="#"></a></h1>
       <a href="#" class="help-suggestions ico-question hidden-xs">Ajuda e Sugestões</a>
-
     </div>
   </header>
- 
-  <!-- Menu -->
   <div class="nav-content">
     <menu class="menu">
       <ul class="container">
@@ -49,14 +44,11 @@
       <li><a href="#" class="ico-help-circle">Ajuda e sugestões</a></li>
     </ul>
   </div>
- 
-  <!-- Aqui começa a parte de conteúdo dividido por colunas -->
 
   <main class="main">
     <div class="container">
       <div class="row">
         <div class="col-md-9 content" role="main">
-           <!--Conteúdo da tela principal -->
            </br> 
 
            {% block content %}
@@ -64,13 +56,12 @@
           
         </div>
         <aside class="col-md-3 sidebar" role="complementary">
-          </br> <a href="/list_client/" role="menuitem">Contatos</a>
+          </br> <a href="/list_client/" role="menuitem">Cadastrar Usuario</a>
         </aside>
       </div>
     </div>
   </main>
  
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-menu">
       <nav class="container">
@@ -84,13 +75,12 @@
       </nav>
     </div>
     <div class="container footer-info">
-      <span class="last-access ico-screen"><strong>Último acesso: </strong>7/8/2011 22:35:49</span>
+      <span class="last-access ico-screen"><strong>Último acesso: </strong>30/03/2011 18:00:00</span>
       <div class="set-ip"><span class="set-ip"><strong>IP:</strong> 201.87.65.217</span></div>
-      <p class="copy-right">Copyright © 2018-2020 Control System</p>
+      <p class="copy-right">Copyright © ViniciusBN</p>
     </div>
   </footer>
  
-  <!-- Scripts - Atente-se na ordem das chamadas -->
   <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
   <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
   <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
