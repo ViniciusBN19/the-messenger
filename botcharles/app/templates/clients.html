@@ -1,0 +1,54 @@
+  {% extends "base.html" %}
+
+  {% block content %}
+  {% load static %}<center><img src="{% static "images/cliente.png" %}" alt="Clientes" width="15%" height="15%"></center>
+           {% for item in error %}
+           <p>{{ item }}</p>
+           {% endfor %}
+           <table>
+              <center>
+                 <h1>Cadastro</h1>
+                 {% if client%}
+                 {% for item in client %}
+                 <form action="/new_client/" method="post">
+                    <input type="number" name="id" value="{{ item.id }}" hidden>
+                    <input type="text" name="name" value="{{ item.name }}" required>
+                    <input type="tel" name="phone" value="{{ item.phone }}">
+                    <input type="email" name="email" value="{{ item.email }}">
+                    <input type="submit" name="enviar" value="Salvar">
+                 </form>
+                 {% endfor %} 
+                 {% else %}
+                 <form action="/new_client/" method="post">
+                    <input type="number" name="id" value="-1" hidden>
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="tel" name="phone" placeholder="Telefone">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="submit" name="enviar" value="Salvar">
+                 </form>
+                 {% endif %}
+              </center>
+           </table>
+           
+           <br>
+           <hr /><br><br>
+           <center>
+           <ul>
+              <table border="1">
+                 <p>Clientes cadastrados</p>
+                 {% for item in list %}
+                 <tr>
+                    <td><b>Nome:</b> {{ item.name }}</td>
+                    <td><b>Telefone:</b> {{ item.phone }}</td>
+                    <td><b>E-mail:</b> {{ item.email }}</td>
+                    <td><a href="/delete_client/?id={{ item.id }}">Deletar</a></td>
+                    <td><a href="/update_client/?id={{ item.id }}">Alterar</a></td>
+                 </tr>
+                 {% endfor %}
+        
+              </table>
+           </ul>
+         </center>
+          
+        
+   {% endblock content %}
