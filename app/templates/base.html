@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>ClassNet - Messenger</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ 
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
+ 
+</head>
+<body>
+  <style>
+    body {background-color: coral;}
+  </style>
+  <header class="header" role="banner">
+    <div class="container">
+      <span class="control-menu visible-xs ico-menu-2"></span>
+      <span class="control-sidebar visible-xs ico-list"></span>
+      <h1 class="project-name"><a href="#"></a></h1>
+      <a href="#" class="help-suggestions ico-question hidden-xs">Ajuda e Sugestões</a>
+    </div>
+  </header>
+  <div class="nav-content">
+    <menu class="menu">
+      <ul class="container">
+        <li><a href="/" class="active ico-home" role="menuitem">Home</a></li>
+        <li><a href="/list_client/" role="menuitem">Lista de contatos</a></li>
+        <li><a href="#" role="menuitem">Mensagens</a>
+          <ul>
+            <li><a href="#">Enviar</a></li>
+            <li><a href="#">Criar</a></li>
+            <li><a href="#">Editar</a></li>
+            <li><a href="#">Relatórios</a></li>
+          </ul>
+        </li>
+        <li><a href="#" role="menuitem">Campanhas</a></li>
+        <li><a href="#" role="menuitem">Relatórios</a></li>
+        <li><a href="#" role="menuitem">Configurações</a></li>
+      </ul>
+    </menu>
+    <h2 class="title-sep visible-xs">Mais</h2>
+    <ul class="nav-mob-list visible-xs">
+      <li><a href="#" class="ico-help-circle">Ajuda e sugestões</a></li>
+    </ul>
+  </div>
+
+  <main class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 content" role="main">
+           </br> 
+
+           {% block content %}
+           {% endblock content %}
+          
+        </div>
+        <aside class="col-md-3 sidebar" role="complementary">
+          </br> <a href="/list_client/" role="menuitem">Cadastrar Usuario</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="footer">
+    <div class="footer-menu">
+      <nav class="container">
+        <h2 class="title-footer">suporte e ajuda</h2>
+        <ul class="no-liststyle">
+          <li><a href="#" class="bg-customer-support"><span class="visible-lg">Atendimento</span></a></li>
+          <li><a href="#" class="bg-my-tickets"><span class="visible-lg">Meus Chamados</span></a></li>
+          <li><a href="#" class="bg-help-desk"><span class="visible-lg">Central de Ajuda (Wiki)</span></a></li>
+          <li><a href="#" class="bg-statusblog"><span class="visible-lg">Statusblog</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-info">
+      <span class="last-access ico-screen"><strong>Último acesso: </strong>30/03/2011 18:00:00</span>
+      <div class="set-ip"><span class="set-ip"><strong>IP:</strong> 201.87.65.217</span></div>
+      <p class="copy-right">Copyright © ViniciusBN</p>
+    </div>
+  </footer>
+ 
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
